@@ -8,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit-btn") {
                 checkAnswer();
-            } else {
+            } else if (this.getAttribute("data-type") === "give-up-btn") {
+                displayImage()
                 resetScore();
             }
         })
@@ -30,10 +31,14 @@ function displayRiddle() {
 }
 
 function resetRiddle() {
+
     document.getElementById("answer-box").value = "";
+    document.getElementById("riddle").textContent = "";
+    displayRiddle();
 }
 
 function checkAnswer() {
+
     let userAnswer = document.getElementById("answer-box").value;
     let isCorrect = userAnswer === riddle.answer;
 
@@ -52,18 +57,18 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldscore;
 
     resetRiddle();
-    displayRiddle ();
-
 }
 
 function resetScore() {
-    document.getElementById("score").innerText = "0"
 
+    document.getElementById("score").innerText = "0"
     resetRiddle();
-    displayRiddle ();
 }
 
 function displayImage() {
-
 }
+
+    
+        
+
 
