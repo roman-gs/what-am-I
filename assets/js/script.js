@@ -6,33 +6,40 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit-btn") {
-                alert("You clicked Submit!");
-            } else {
-                let buttonType = this.getAttribute("data-type");
-                alert(`You clicked ${buttonType}`);
+                checkAnswer();
             }
         })
     } displayRiddle();
 })
+
+//Variable
+var teapot = {answer : "a teapot", question : "What begins with T ends with T and has T in it?",};
+var sponge = {answer :"a sponge", question : "What is full of holes but still holds water?",};
+var candle = {answer:"a candle", question : "I'm tall when I'm young, and I'm short when I'm old, what am I?",};
+
+var riddle = getRandom(teapot, sponge, candle);
 
 //Functions
 function getRandom(...arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 } //Credit https://www.sololearn.com/compiler-playground/Wp0hZIF2Cw84/?ref=app
 
-let teapot = {answer : "a teapot", question : "What begins with T ends with T and has T in it?",};
-let sponge = {answer :"a sponge", question : "What is full of holes but still holds water?",};
-let candle = {answer:"a candle", question : "I'm tall when I'm young, and I'm short when I'm old, what am I?",};
-
 function displayRiddle() {
-    let riddle = getRandom(teapot, sponge, candle);
-
-    document.getElementById("riddle").textContent = riddle.question
-
+    document.getElementById("riddle").textContent = riddle.question;
 }
 
 function checkAnswer() {
+    let userAnswer = document.getElementById("answer-box").value;
+    let isCorrect = userAnswer === riddle.answer;
 
+    if (isCorrect) {
+        alert("Congratulation, that's correct!");
+    } else {
+        alert(`The correct answer was ${riddle.answer}`)
+    }
+
+    getRandom ();
+    displayRiddle();
 }
 
 function incrementScore() {
@@ -42,3 +49,4 @@ function incrementScore() {
 function displayImage() {
 
 }
+
