@@ -34,6 +34,7 @@ function checkAnswer() {
 
     if (isCorrect) {
         alert("Congratulation, that's correct!");
+        incrementScore();
     } else {
         alert(`The correct answer was ${riddle.answer}`)
     }
@@ -43,6 +44,9 @@ function checkAnswer() {
 }
 
 function incrementScore() {
+
+    let oldscore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldscore;
 
 }
 
