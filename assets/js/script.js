@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit-btn") {
                 checkAnswer();
+            } else {
+                resetScore();
             }
         })
     } displayRiddle();
@@ -37,9 +39,10 @@ function checkAnswer() {
         incrementScore();
     } else {
         alert(`The correct answer was ${riddle.answer}`)
+        resetScore();
     }
 
-    getRandom ();
+    getRandom (...arr);
     displayRiddle();
 }
 
@@ -48,6 +51,10 @@ function incrementScore() {
     let oldscore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldscore;
 
+}
+
+function resetScore() {
+    document.getElementById("score").innerText = "0"
 }
 
 function displayImage() {
