@@ -65,8 +65,12 @@ function resetScore() {
     resetRiddle();
 }
 
-function displayImage() {
+function changeImage() {
+        document.getElementById("image").src = "./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg";
 }
+
+
+  
 
     
         
