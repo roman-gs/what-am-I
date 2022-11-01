@@ -1,19 +1,8 @@
 //Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("button");
 
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "submit-btn") {
-                checkAnswer();
-            } else if (this.getAttribute("data-type") === "give-up-btn") {
-                displayImage()
-                resetScore();
-            }
-        })
-    } displayRiddle();
+    displayRiddle();
 })
 
 //Different Riddles
@@ -30,13 +19,6 @@ function displayRiddle() {
     document.getElementById("riddle").textContent = riddle.question;
 }
 
-function resetRiddle() {
-
-    document.getElementById("answer-box").value = "";
-    document.getElementById("riddle").textContent = "";
-    displayRiddle();
-}
-
 function checkAnswer() {
 
     let userAnswer = document.getElementById("answer-box").value;
@@ -46,7 +28,7 @@ function checkAnswer() {
         alert("Congratulation, that's correct!");
         incrementScore();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddle.answer}`)
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddle.answer}`);
         resetScore();
     }
 }
@@ -55,21 +37,24 @@ function incrementScore() {
 
     let oldscore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldscore;
-
-    resetRiddle();
 }
 
 function resetScore() {
-
     document.getElementById("score").innerText = "0"
-    resetRiddle();
+    nextQuestion();
 }
 
+// Credit: https://stackoverflow.com/questions/6764961/change-an-image-with-onclick
 function changeImage() {
         document.getElementById("image").src = riddle.imgSource;
+        resetScore();
 }
 
-
+function nextQuestion() {
+    document.getElementById("riddle").textContent = "";
+    document.getElementById("answer-box").value = "";
+    document.getElementById("riddle").textContent = riddle.question++;
+}
   
 
     
