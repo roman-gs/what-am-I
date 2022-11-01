@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
 })
 
 //Different Riddles
-var teapot = {answer : "a teapot", question : "What begins with T ends with T and has T in it?",};
-var sponge = {answer :"a sponge", question : "What is full of holes but still holds water?",};
-var candle = {answer:"a candle", question : "I'm tall when I'm young, and I'm short when I'm old, what am I?",};
+var teapot = {answer : "a teapot", question : "What begins with T ends with T and has T in it?", imgSource : "./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg",};
+var sponge = {answer :"a sponge", question : "What is full of holes but still holds water?", imgSource : "./assets/images/pexels-cottonbro-4108680.jpg",};
+var candle = {answer:"a candle", question : "I'm tall when I'm young, and I'm short when I'm old, what am I?", imgSource : "./assets/images/pexels-pixabay-278823.jpg",};
 
 //Selecting random riddle (credit https://stackoverflow.com/questions/65129389/how-can-i-set-a-variable-to-one-of-two-random-options)
 var riddles = [teapot, sponge, candle];
@@ -66,7 +66,7 @@ function resetScore() {
 }
 
 function changeImage() {
-        document.getElementById("image").src = "./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg";
+        document.getElementById("image").src = riddle.imgSource;
 }
 
 
