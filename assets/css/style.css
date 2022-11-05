@@ -19,8 +19,6 @@ body {
 .game-area {
     background-color: #E6ECF0;
     width: 85%;
-    height: 65vh;
-    max-height: 600px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -29,11 +27,12 @@ body {
 
 .riddle-area p {
     background-color: white;
+    font-weight: bold;
     border: 3px solid;
+    height: 40px;
     width: 70%;
-    font-size: 2rem;
-    margin: 20px auto;
-    padding: 50px 0;
+    margin: 15px auto;
+    padding: 15px 0 15px;
 }
 
 .image-area img{

@@ -16,30 +16,68 @@
 <body>
     <h1 class="heading">What Am I?</h1>
 
-    <div class="game-area">
-
+    <div class="score-area">
+        <p class="scores">Correct Answers: <span id="score">0</span> / 10</p>
+    </div>
+    
+    <div class="game-area"> 
+        <!-- teapot riddle -->
         <div class="riddle-area">
-            <p id="riddle"></p>
+            <p id="riddle">What begins with T ends with T and has T in it?</p>
         </div>
 
         <div class="answer-area">
-            <label for="answer-box"> I am </label>
-            <input id="answer-box" type="text">
+            <label for="answer-box1"> I am a </label>
+            <input id="answer-box1" type="text">
         </div>
 
         <div class="button-area">
-            <button class="btn submit" data-type="submit-btn" onclick="checkAnswer()">Submit</button>
-            <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage()">Show Me</button>
-            <button  class="btn give-up" data-type="next-btn" onclick="nextQuestion()">Next Question</button>
+            <button class="btn submit" data-type="submit-btn" onclick="checkAnswer1()">Submit</button>
+            <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage1()">Show Me</button>
         </div>
 
     <div class="image-area">
         <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
+
+    <!-- sponge riddle -->
+    <div class="riddle-area">
+        <p id="riddle">What is full of holes but still holds water?</p>
     </div>
 
-    <div class="score-area">
-        <p class="scores">Correct Answers in a row: <span id="score">0</span></p>
+    <div class="answer-area">
+        <label for="answer-box2"> I am a</label>
+        <input id="answer-box2" type="text">
     </div>
+
+    <div class="button-area">
+        <button class="btn submit" data-type="submit-btn" onclick="checkAnswer2()">Submit</button>
+        <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage2()">Show Me</button>
+    </div>
+
+<div class="image-area">
+    <img id="image2" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
+
+    </div>
+
+    <!-- teapot riddle -->
+    <div class="riddle-area">
+        <p id="riddle">I'm tall when I'm young, and I'm short when I'm old, what am I?</p>
+    </div>
+
+    <div class="answer-area">
+        <label for="answer-box3"> I am a </label>
+        <input id="answer-box3" type="text">
+    </div>
+
+    <div class="button-area">
+        <button class="btn submit" data-type="submit-btn" onclick="checkAnswer3()">Submit</button>
+        <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage3()">Show Me</button>
+    </div>
+
+<div class="image-area">
+    <img id="image3" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
+
+    
    
     <script src="assets/js/script.js"></script>
 </body>
