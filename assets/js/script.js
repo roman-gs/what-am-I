@@ -5,12 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
   //  displayRiddle();
 })
 
-//Increment score:
-function incrementScore() {
 
-    let oldscore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldscore;
-}
 
 //Teapot riddle
 function checkAnswer1() {
@@ -58,8 +53,15 @@ function checkAnswer3() {
 
 function changeImage3() {
     document.getElementById("image3").src = "./assets/images/pexels-pixabay-278823.jpg";
+    
 }
 
+//Increment score:
+function incrementScore() {
+
+    let oldscore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldscore;
+}
 
 // Credit: https://stackoverflow.com/questions/6764961/change-an-image-with-onclick
 

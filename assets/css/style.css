@@ -88,3 +88,22 @@ body {
     margin-top: 15px;
 }
 
+/* Navigation styling */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    padding-left: 10px;
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit; 
+}
