@@ -90,20 +90,12 @@ body {
 
 /* Navigation styling */
 
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    padding-left: 10px;
-    line-height: 75px;
-}
-
-#menu li {
-    float: right;
+div ul li {
+    display: inline;
     list-style-type: none;
-    margin-right: 30px;
+    margin: auto;
 }
 
-#menu a {
+div ul li a {
     text-decoration: none;
-    color: inherit; 
 }
