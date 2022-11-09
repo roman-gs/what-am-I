@@ -98,4 +98,6 @@ div ul li {
 
 div ul li a {
     text-decoration: none;
+    color: inherit;
 }
+

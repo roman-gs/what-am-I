@@ -28,11 +28,11 @@
 
         <div class="answer-area">
             <label for="answer-box1"> I am a </label>
-            <input id="answer-box1" type="text">
+            <input id="answer-box1" type="text" onkeyup="btnActivation()">
         </div>
 
         <div class="button-area">
-            <button class="btn submit" data-type="submit-btn" onclick="checkAnswer1()">Submit</button>
+            <button id= "submit-btn1" class="btn submit" data-type="submit-btn" onclick="checkAnswer1()" disabled>Submit</button>
             <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage1()">Show Me</button>
         </div>
 
@@ -42,12 +42,12 @@
         
     <div>
         <ul>
-            <li id="next">
+            <li>
                 <a href="sponge.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
             </li>
         </ul>
         <ul>
-            <li id="next">
+            <li>
                 <a href="index.html">Start over <i class="fa-solid fa-arrow-rotate-left"></i></a>
             </li>
         </ul>

@@ -60,6 +60,18 @@ function changeImage3() {
     document.getElementById("image3").src = "./assets/images/pexels-pixabay-278823.jpg";
 }
 
+/* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
+function btnActivation() { 
+    if(!document.getElementById('answer-box1').value.length){
+        document.getElementById("submit-btn1").disabled = true;            
+    }else{
+        document.getElementById("submit-btn1").disabled = false;
+
+    }           
+} 
+
+
+
 
 
   
