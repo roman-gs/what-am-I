@@ -27,13 +27,13 @@
         </div>
 
         <div class="answer-area">
-            <label for="answer-box1"> I am a </label>
-            <input id="answer-box1" type="text" onkeyup="btnActivation()">
+            <label for="answer-box-teapot"> I am a </label>
+            <input id="answer-box-teapot" type="text" onkeyup="btnActivationTeapot()">
         </div>
 
         <div class="button-area">
-            <button id= "submit-btn1" class="btn submit" data-type="submit-btn" onclick="checkAnswer1()" disabled>Submit</button>
-            <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage1()">Show Me</button>
+            <button id= "submit-btn-teapot" class="btn submit" data-type="submit-btn" onclick="checkAnswerTeapot()" disabled>Submit</button>
+            <button  class="btn give-up" data-type="give-up-btn" onclick="showMeTeapot()">Show Me</button>
         </div>
 
     <div class="image-area">
@@ -42,7 +42,7 @@
         
     <div>
         <ul>
-            <li>
+            <li id="next">
                 <a href="sponge.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
             </li>
         </ul>

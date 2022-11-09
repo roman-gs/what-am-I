@@ -27,17 +27,17 @@
     </div>
 
     <div class="answer-area">
-        <label for="answer-box2"> I am a</label>
-        <input id="answer-box2" type="text">
+        <label for="answer-box-sponge"> I am a</label>
+        <input class="answer-box" id="answer-box-sponge" type="text" onkeyup="btnActivationSponge()">
     </div>
 
     <div class="button-area">
-        <button class="btn submit" data-type="submit-btn" onclick="checkAnswer2()">Submit</button>
-        <button  class="btn give-up" data-type="give-up-btn" onclick="changeImage2()">Show Me</button>
+        <button id="submit-btn-sponge" class="btn submit" data-type="submit-btn" onclick="checkAnswerSponge()" disabled>Submit</button>
+        <button  class="btn give-up" data-type="give-up-btn" onclick="showMeSponge()">Show Me</button>
     </div>
 
     <div class="image-area">
-    <img id="image2" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
+    <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
 </div>
         
     <div>
