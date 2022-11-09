@@ -28,9 +28,12 @@ function checkAnswer2() {
     
     if (userAnswer === "sponge") {
         alert("Congratulation, that's correct!");
-        incrementScore();
+        changeImage2();
+        document.getElementById("image2").style.border = "6px solid green";
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was sponge`);
+        changeImage2();
+        document.getElementById("image2").style.border = "6px solid red";
     }
 }
 
@@ -44,21 +47,17 @@ function checkAnswer3() {
     
     if (userAnswer === "candle") {
         alert("Congratulation, that's correct!");
-        incrementScore();
+        changeImage3();
+        document.getElementById("image3").style.border = "6px solid green";
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was candle`);
+        changeImage3();
+        document.getElementById("image3").style.border = "6px solid red";
     }
 }
 
 function changeImage3() {
     document.getElementById("image3").src = "./assets/images/pexels-pixabay-278823.jpg";
-}
-
-//Increment score:
-function incrementScore() {
-
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
 }
 
 
