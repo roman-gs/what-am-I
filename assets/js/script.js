@@ -146,6 +146,56 @@ function btnActivationCandle() {
     }           
 } 
 
+function btnDeactivation() { 
+    document.getElementById("show-btn").disabled = true;            
+}
+
+//Bank riddle
+function checkAnswerBank() {
+    let userAnswer = document.getElementById("answer-box-bank").value;
+    
+    if (userAnswer === riddles[3].answer) {
+        alert("Congratulation, that's correct!");
+        changeImageBank();
+        document.getElementById("image").style.border = "6px solid green";
+        document.getElementById("next").style.color = "green";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    } else {
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[3].answer}`);
+        changeImageBank();
+        document.getElementById("image").style.border = "6px solid red";
+        document.getElementById("next").style.color = "red";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    }
+}
+
+function changeImageBank() {
+    document.getElementById("image").src = riddles[3].img;
+    btnDeactivation();
+}
+
+function showMeBank() {
+    changeImageBank();
+    document.getElementById("image").style.border = "6px solid red";
+    document.getElementById("next").style.color = "red";
+    document.getElementById("next").style.fontWeight = "bold";
+    document.getElementById("next").style.fontSize = "150%";
+}
+
+function btnActivationBank() { 
+    if(!document.getElementById("answer-box-bank").value.length){
+        document.getElementById("submit-btn-bank").disabled = true;            
+    }else{
+        document.getElementById("submit-btn-bank").disabled = false;
+
+    }           
+} 
+
+function btnDeactivation() { 
+    document.getElementById("show-btn").disabled = true;            
+}
 /* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
 
 
