@@ -230,11 +230,11 @@ function checkAnswerPiano() {
     if (userAnswer === riddles[6].answer) {
         alert("Congratulation, that's correct!");
         changeImagePiano();
-        borderGreen;
+        borderGreen();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[6].answer}`);
         changeImagePiano();
-        borderRed ();
+        borderRed();
     }
 }
 
