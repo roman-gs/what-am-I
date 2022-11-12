@@ -8,6 +8,8 @@ riddles[0]=  {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-
 riddles[1]= {answer:"sponge", img:"./assets/images/pexels-cottonbro-4108680.jpg"};
 riddles[2]= {answer:"candle", img:"./assets/images/pexels-pixabay-278823.jpg"};
 riddles[3]= {answer:"bank", img:"./assets/images/pexels-erik-mclean-7260887.jpg"};
+riddles[4]= {answer:"egg", img:"./assets/images/pexels-pixabay-162712.jpg"};
+riddles[5]= {answer:"towel", img:"./assets/images/pexels-pixabay-162712.jpg"};
 
 //Teapot riddle
 function checkAnswerTeapot() {
@@ -189,6 +191,53 @@ function btnActivationBank() {
         document.getElementById("submit-btn-bank").disabled = true;            
     }else{
         document.getElementById("submit-btn-bank").disabled = false;
+
+    }           
+} 
+
+function btnDeactivation() { 
+    document.getElementById("show-btn").disabled = true;            
+}
+
+//Egg riddle
+function checkAnswerEgg() {
+    let userAnswer = document.getElementById("answer-box-egg").value;
+    
+    if (userAnswer === riddles[4].answer) {
+        alert("Congratulation, that's correct!");
+        changeImageEgg();
+        document.getElementById("image").style.border = "6px solid green";
+        document.getElementById("next").style.color = "green";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    } else {
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[4].answer}`);
+        changeImageEgg();
+        document.getElementById("image").style.border = "6px solid red";
+        document.getElementById("next").style.color = "red";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    }
+}
+
+function changeImageEgg() {
+    document.getElementById("image").src = riddles[4].img;
+    btnDeactivation();
+}
+
+function showMeEgg() {
+    changeImageEgg();
+    document.getElementById("image").style.border = "6px solid red";
+    document.getElementById("next").style.color = "red";
+    document.getElementById("next").style.fontWeight = "bold";
+    document.getElementById("next").style.fontSize = "150%";
+}
+
+function btnActivationEgg() { 
+    if(!document.getElementById("answer-box-egg").value.length){
+        document.getElementById("submit-btn-egg").disabled = true;            
+    }else{
+        document.getElementById("submit-btn-egg").disabled = false;
 
     }           
 } 
