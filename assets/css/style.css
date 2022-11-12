@@ -43,15 +43,10 @@ body {
     margin: 15px auto;
 }
 
-.score-area {
+.page-area {
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
-}
-
-#score {
-    color: green;
-    font-weight: bold;
 }
 
 #answer-box {

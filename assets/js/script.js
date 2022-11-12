@@ -7,6 +7,7 @@ const riddles = [];
 riddles[0]=  {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
 riddles[1]= {answer:"sponge", img:"./assets/images/pexels-cottonbro-4108680.jpg"};
 riddles[2]= {answer:"candle", img:"./assets/images/pexels-pixabay-278823.jpg"};
+riddles[3]= {answer:"bank", img:"./assets/images/pexels-erik-mclean-7260887.jpg"};
 
 //Teapot riddle
 function checkAnswerTeapot() {
