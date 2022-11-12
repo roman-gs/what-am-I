@@ -11,7 +11,7 @@ riddles[3]= {answer:"bank", img:"./assets/images/pexels-erik-mclean-7260887.jpg"
 riddles[4]= {answer:"egg", img:"./assets/images/pexels-pixabay-162712.jpg"};
 riddles[5]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
 riddles[6]= {answer:"piano", img:"./assets/images/pexels-juan-pablo-serrano-arenas-1246437.jpg"};
-riddles[7]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
+riddles[7]= {answer:"staircase", img:"./assets/images/pexels-cosmin-paduraru-340981.jpg"};
 riddles[8]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
 
 //Teapot riddle
@@ -21,17 +21,11 @@ function checkAnswerTeapot() {
     if (userAnswer === riddles[0].answer) {
         alert("Congratulation, that's correct!");
         changeImageTeapot();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[0].answer}`);
         changeImageTeapot();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed();
     }
 }
 
@@ -42,10 +36,7 @@ function changeImageTeapot() {
 
 function showMeTeapot() {
     changeImageTeapot();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed();
 }
 
 function btnActivationTeapot() { 
@@ -57,9 +48,6 @@ function btnActivationTeapot() {
     }           
 } 
 
-function btnDeactivation() { 
-        document.getElementById("show-btn").disabled = true;            
-    }
 
 //Sponge riddle
 function checkAnswerSponge() {
@@ -68,17 +56,11 @@ function checkAnswerSponge() {
     if (userAnswer === riddles[1].answer) {
         alert("Congratulation, that's correct!");
         changeImageSponge();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[1].answer}`);
         changeImageSponge();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed();
     }
 }
 
@@ -89,10 +71,7 @@ function changeImageSponge() {
 
 function showMeSponge() {
     changeImageSponge();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed();
 }
 
 function btnActivationSponge() { 
@@ -104,9 +83,6 @@ function btnActivationSponge() {
     }  
 }
 
-function btnDeactivation() { 
-    document.getElementById("show-btn").disabled = true;            
-}
  
 //Candle riddle
 function checkAnswerCandle() {
@@ -115,17 +91,11 @@ function checkAnswerCandle() {
     if (userAnswer === riddles[2].answer) {
         alert("Congratulation, that's correct!");
         changeImageCandle();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[2].answer}`);
         changeImageCandle();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed();
     }
 }
 
@@ -136,10 +106,7 @@ function changeImageCandle() {
 
 function showMeCandle() {
     changeImageCandle();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed();
 }
 
 function btnActivationCandle() { 
@@ -151,9 +118,6 @@ function btnActivationCandle() {
     }           
 } 
 
-function btnDeactivation() { 
-    document.getElementById("show-btn").disabled = true;            
-}
 
 //Bank riddle
 function checkAnswerBank() {
@@ -162,17 +126,11 @@ function checkAnswerBank() {
     if (userAnswer === riddles[3].answer) {
         alert("Congratulation, that's correct!");
         changeImageBank();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[3].answer}`);
         changeImageBank();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed();
     }
 }
 
@@ -183,10 +141,7 @@ function changeImageBank() {
 
 function showMeBank() {
     changeImageBank();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed();
 }
 
 function btnActivationBank() { 
@@ -198,10 +153,6 @@ function btnActivationBank() {
     }           
 } 
 
-function btnDeactivation() { 
-    document.getElementById("show-btn").disabled = true;            
-}
-
 //Egg riddle
 function checkAnswerEgg() {
     let userAnswer = document.getElementById("answer-box-egg").value;
@@ -209,17 +160,11 @@ function checkAnswerEgg() {
     if (userAnswer === riddles[4].answer) {
         alert("Congratulation, that's correct!");
         changeImageEgg();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[4].answer}`);
         changeImageEgg();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed();
     }
 }
 
@@ -230,10 +175,7 @@ function changeImageEgg() {
 
 function showMeEgg() {
     changeImageEgg();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed();
 }
 
 function btnActivationEgg() { 
@@ -245,9 +187,6 @@ function btnActivationEgg() {
     }           
 } 
 
-function btnDeactivation() { 
-    document.getElementById("show-btn").disabled = true;            
-}
 
 //Towel riddle
 function checkAnswerTowel() {
@@ -256,17 +195,11 @@ function checkAnswerTowel() {
     if (userAnswer === riddles[5].answer) {
         alert("Congratulation, that's correct!");
         changeImageTowel();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen ();
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[5].answer}`);
         changeImageTowel();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed ();
     }
 }
 
@@ -277,10 +210,7 @@ function changeImageTowel() {
 
 function showMeTowel() {
     changeImageTowel();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed ();
 }
 
 function btnActivationTowel() { 
@@ -292,9 +222,6 @@ function btnActivationTowel() {
     }           
 } 
 
-function btnDeactivation() { 
-    document.getElementById("show-btn").disabled = true;            
-}
 
 //Piano riddle
 function checkAnswerPiano() {
@@ -303,17 +230,11 @@ function checkAnswerPiano() {
     if (userAnswer === riddles[6].answer) {
         alert("Congratulation, that's correct!");
         changeImagePiano();
-        document.getElementById("image").style.border = "6px solid green";
-        document.getElementById("next").style.color = "green";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderGreen;
     } else {
         alert(`You've answered ${userAnswer}, the correct answer was ${riddles[6].answer}`);
         changeImagePiano();
-        document.getElementById("image").style.border = "6px solid red";
-        document.getElementById("next").style.color = "red";
-        document.getElementById("next").style.fontWeight = "bold";
-        document.getElementById("next").style.fontSize = "150%";
+        borderRed ();
     }
 }
 
@@ -324,10 +245,7 @@ function changeImagePiano() {
 
 function showMePiano() {
     changeImagePiano();
-    document.getElementById("image").style.border = "6px solid red";
-    document.getElementById("next").style.color = "red";
-    document.getElementById("next").style.fontWeight = "bold";
-    document.getElementById("next").style.fontSize = "150%";
+    borderRed();
 }
 
 function btnActivationPiano() { 
@@ -339,11 +257,60 @@ function btnActivationPiano() {
     }           
 } 
 
+//Staircase riddle
+function checkAnswerStaircase() {
+    let userAnswer = document.getElementById("answer-box-staircase").value;
+    
+    if (userAnswer === riddles[7].answer) {
+        alert("Congratulation, that's correct!");
+        changeImageStaircase();
+        borderGreen();
+    } else {
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[7].answer}`);
+        changeImageStaircase();
+        borderRed();
+    }
+}
+
+function changeImageStaircase() {
+    document.getElementById("image").src = riddles[7].img;
+    btnDeactivation();
+}
+
+function showMeStaircase() {
+    changeImageStaircase();
+    borderRed();
+}
+
+function btnActivationStaircase() { 
+    if(!document.getElementById("answer-box-staircase").value.length){
+        document.getElementById("submit-btn-staircase").disabled = true;            
+    }else{
+        document.getElementById("submit-btn-staircase").disabled = false;
+
+    }           
+} 
+
+
+/* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
+
+function borderGreen() {
+    document.getElementById("image").style.border = "6px solid green";
+    document.getElementById("next").style.color = "green";
+    document.getElementById("next").style.fontWeight = "bold";
+    document.getElementById("next").style.fontSize = "150%";
+}
+
+function borderRed() {
+    document.getElementById("image").style.border = "6px solid red";
+    document.getElementById("next").style.color = "red";
+    document.getElementById("next").style.fontWeight = "bold";
+    document.getElementById("next").style.fontSize = "150%";
+}
+
 function btnDeactivation() { 
     document.getElementById("show-btn").disabled = true;            
 }
-/* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
-
 
 
 
