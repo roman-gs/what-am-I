@@ -9,7 +9,7 @@ riddles[1]= {answer:"sponge", img:"./assets/images/pexels-cottonbro-4108680.jpg"
 riddles[2]= {answer:"candle", img:"./assets/images/pexels-pixabay-278823.jpg"};
 riddles[3]= {answer:"bank", img:"./assets/images/pexels-erik-mclean-7260887.jpg"};
 riddles[4]= {answer:"egg", img:"./assets/images/pexels-pixabay-162712.jpg"};
-riddles[5]= {answer:"towel", img:"./assets/images/pexels-pixabay-162712.jpg"};
+riddles[5]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
 
 //Teapot riddle
 function checkAnswerTeapot() {
@@ -238,6 +238,53 @@ function btnActivationEgg() {
         document.getElementById("submit-btn-egg").disabled = true;            
     }else{
         document.getElementById("submit-btn-egg").disabled = false;
+
+    }           
+} 
+
+function btnDeactivation() { 
+    document.getElementById("show-btn").disabled = true;            
+}
+
+//Towel riddle
+function checkAnswerTowel() {
+    let userAnswer = document.getElementById("answer-box-towel").value;
+    
+    if (userAnswer === riddles[5].answer) {
+        alert("Congratulation, that's correct!");
+        changeImageTowel();
+        document.getElementById("image").style.border = "6px solid green";
+        document.getElementById("next").style.color = "green";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    } else {
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[5].answer}`);
+        changeImageTowel();
+        document.getElementById("image").style.border = "6px solid red";
+        document.getElementById("next").style.color = "red";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    }
+}
+
+function changeImageTowel() {
+    document.getElementById("image").src = riddles[5].img;
+    btnDeactivation();
+}
+
+function showMeTowel() {
+    changeImageTowel();
+    document.getElementById("image").style.border = "6px solid red";
+    document.getElementById("next").style.color = "red";
+    document.getElementById("next").style.fontWeight = "bold";
+    document.getElementById("next").style.fontSize = "150%";
+}
+
+function btnActivationTowel() { 
+    if(!document.getElementById("answer-box-towel").value.length){
+        document.getElementById("submit-btn-towel").disabled = true;            
+    }else{
+        document.getElementById("submit-btn-towel").disabled = false;
 
     }           
 } 
