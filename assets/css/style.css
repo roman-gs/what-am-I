@@ -1,4 +1,4 @@
-/* --------- Global style */
+/*  Global style */
 
 body {
     background-color: white;
@@ -7,14 +7,14 @@ body {
     text-align: center;
 }
 
-/* --------- Heading */
+/* Heading */
 
 .heading {
     text-align: center;
     font-size: 2.5rem;
 }
 
-/* --------- Game layout */
+/* Game layout */
 
 .game-area {
     background-color: #E6ECF0;
@@ -57,7 +57,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* --------- Buttons */
+/* Buttons */
 
 .button-area {
     font-family: "Raleway", sans-serif;
