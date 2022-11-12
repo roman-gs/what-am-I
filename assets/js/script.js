@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const riddles = [];
 riddles[0]=  {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
-riddles[1]= {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
-riddles[2]= {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
+riddles[1]= {answer:"sponge", img:"./assets/images/pexels-cottonbro-4108680.jpg"};
+riddles[2]= {answer:"candle", img:"./assets/images/pexels-pixabay-278823.jpg"};
 
 //Teapot riddle
 function checkAnswerTeapot() {
@@ -31,7 +31,7 @@ function checkAnswerTeapot() {
 
 function changeImageTeapot() {
     document.getElementById("image").src = riddles[0].img;
-    btnDeactivationTeapot();
+    btnDeactivation();
 }
 
 function showMeTeapot() {
@@ -51,15 +51,15 @@ function btnActivationTeapot() {
     }           
 } 
 
-function btnDeactivationTeapot() { 
-        document.getElementById("show-btn-teapot").disabled = true;            
+function btnDeactivation() { 
+        document.getElementById("show-btn").disabled = true;            
     }
 
 //Sponge riddle
 function checkAnswerSponge() {
     let userAnswer = document.getElementById("answer-box-sponge").value;
     
-    if (userAnswer === "sponge") {
+    if (userAnswer === riddles[1].answer) {
         alert("Congratulation, that's correct!");
         changeImageSponge();
         document.getElementById("image").style.border = "6px solid green";
@@ -67,7 +67,7 @@ function checkAnswerSponge() {
         document.getElementById("next").style.fontWeight = "bold";
         document.getElementById("next").style.fontSize = "150%";
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was sponge`);
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[1].answer}`);
         changeImageSponge();
         document.getElementById("image").style.border = "6px solid red";
         document.getElementById("next").style.color = "red";
@@ -77,7 +77,8 @@ function checkAnswerSponge() {
 }
 
 function changeImageSponge() {
-    document.getElementById("image").src = "./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg";
+    document.getElementById("image").src = riddles[1].img;
+    btnDeactivation()
 }
 
 function showMeSponge() {
@@ -94,13 +95,18 @@ function btnActivationSponge() {
     }else{
         document.getElementById("submit-btn-sponge").disabled = false;
 
-    }           
-} 
+    }  
+}
+
+function btnDeactivation() { 
+    document.getElementById("show-btn").disabled = true;            
+}
+ 
 //Candle riddle
 function checkAnswerCandle() {
     let userAnswer = document.getElementById("answer-box-candle").value;
     
-    if (userAnswer === "candle") {
+    if (userAnswer === riddles[2].answer) {
         alert("Congratulation, that's correct!");
         changeImageCandle();
         document.getElementById("image").style.border = "6px solid green";
@@ -108,7 +114,7 @@ function checkAnswerCandle() {
         document.getElementById("next").style.fontWeight = "bold";
         document.getElementById("next").style.fontSize = "150%";
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was candle`);
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[2].answer}`);
         changeImageCandle();
         document.getElementById("image").style.border = "6px solid red";
         document.getElementById("next").style.color = "red";
@@ -118,7 +124,8 @@ function checkAnswerCandle() {
 }
 
 function changeImageCandle() {
-    document.getElementById("image").src = "./assets/images/pexels-pixabay-278823.jpg";
+    document.getElementById("image").src = riddles[2].img;
+    btnDeactivation();
 }
 
 function showMeCandle() {
