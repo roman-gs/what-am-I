@@ -12,7 +12,7 @@ riddles[4]= {answer:"egg", img:"./assets/images/pexels-pixabay-162712.jpg"};
 riddles[5]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
 riddles[6]= {answer:"piano", img:"./assets/images/pexels-juan-pablo-serrano-arenas-1246437.jpg"};
 riddles[7]= {answer:"staircase", img:"./assets/images/pexels-cosmin-paduraru-340981.jpg"};
-riddles[8]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
+riddles[8]= {answer:"fence", img:"./assets/images/pexels-merilin-kirsika-tedder-635405.jpg"};
 
 //Teapot riddle
 function checkAnswerTeapot() {
@@ -291,6 +291,39 @@ function btnActivationStaircase() {
     }           
 } 
 
+//Fence riddle
+function checkAnswerFence() {
+    let userAnswer = document.getElementById("answer-box-fence").value;
+    
+    if (userAnswer === riddles[8].answer) {
+        alert("Congratulation, that's correct!");
+        changeImageFence();
+        borderGreen();
+    } else {
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[8].answer}`);
+        changeImageFence();
+        borderRed();
+    }
+}
+
+function changeImageFence() {
+    document.getElementById("image").src = riddles[8].img;
+    btnDeactivation();
+}
+
+function showMeFence() {
+    changeImageFence();
+    borderRed();
+}
+
+function btnActivationFence() { 
+    if(!document.getElementById("answer-box-fence").value.length){
+        document.getElementById("submit-btn-fence").disabled = true;            
+    }else{
+        document.getElementById("submit-btn-fence").disabled = false;
+
+    }           
+} 
 
 /* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
 
