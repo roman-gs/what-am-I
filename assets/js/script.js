@@ -3,11 +3,16 @@
 document.addEventListener("DOMContentLoaded", function() {
 })
 
+const riddles = [];
+riddles[0]=  {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
+riddles[1]= {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
+riddles[2]= {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
+
 //Teapot riddle
 function checkAnswerTeapot() {
     let userAnswer = document.getElementById("answer-box-teapot").value;
     
-    if (userAnswer === "teapot") {
+    if (userAnswer === riddles[0].answer) {
         alert("Congratulation, that's correct!");
         changeImageTeapot();
         document.getElementById("image").style.border = "6px solid green";
@@ -15,7 +20,7 @@ function checkAnswerTeapot() {
         document.getElementById("next").style.fontWeight = "bold";
         document.getElementById("next").style.fontSize = "150%";
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was teapot`);
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[0].answer}`);
         changeImageTeapot();
         document.getElementById("image").style.border = "6px solid red";
         document.getElementById("next").style.color = "red";
@@ -25,7 +30,8 @@ function checkAnswerTeapot() {
 }
 
 function changeImageTeapot() {
-    document.getElementById("image").src = "./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg";
+    document.getElementById("image").src = riddles[0].img;
+    btnDeactivationTeapot();
 }
 
 function showMeTeapot() {
@@ -44,6 +50,10 @@ function btnActivationTeapot() {
 
     }           
 } 
+
+function btnDeactivationTeapot() { 
+        document.getElementById("show-btn-teapot").disabled = true;            
+    }
 
 //Sponge riddle
 function checkAnswerSponge() {
