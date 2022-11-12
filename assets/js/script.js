@@ -10,6 +10,9 @@ riddles[2]= {answer:"candle", img:"./assets/images/pexels-pixabay-278823.jpg"};
 riddles[3]= {answer:"bank", img:"./assets/images/pexels-erik-mclean-7260887.jpg"};
 riddles[4]= {answer:"egg", img:"./assets/images/pexels-pixabay-162712.jpg"};
 riddles[5]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
+riddles[6]= {answer:"piano", img:"./assets/images/pexels-juan-pablo-serrano-arenas-1246437.jpg"};
+riddles[7]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
+riddles[8]= {answer:"towel", img:"./assets/images/pexels-karolina-grabowska-4210372.jpg"};
 
 //Teapot riddle
 function checkAnswerTeapot() {
@@ -285,6 +288,53 @@ function btnActivationTowel() {
         document.getElementById("submit-btn-towel").disabled = true;            
     }else{
         document.getElementById("submit-btn-towel").disabled = false;
+
+    }           
+} 
+
+function btnDeactivation() { 
+    document.getElementById("show-btn").disabled = true;            
+}
+
+//Piano riddle
+function checkAnswerPiano() {
+    let userAnswer = document.getElementById("answer-box-piano").value;
+    
+    if (userAnswer === riddles[6].answer) {
+        alert("Congratulation, that's correct!");
+        changeImagePiano();
+        document.getElementById("image").style.border = "6px solid green";
+        document.getElementById("next").style.color = "green";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    } else {
+        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[6].answer}`);
+        changeImagePiano();
+        document.getElementById("image").style.border = "6px solid red";
+        document.getElementById("next").style.color = "red";
+        document.getElementById("next").style.fontWeight = "bold";
+        document.getElementById("next").style.fontSize = "150%";
+    }
+}
+
+function changeImagePiano() {
+    document.getElementById("image").src = riddles[6].img;
+    btnDeactivation();
+}
+
+function showMePiano() {
+    changeImagePiano();
+    document.getElementById("image").style.border = "6px solid red";
+    document.getElementById("next").style.color = "red";
+    document.getElementById("next").style.fontWeight = "bold";
+    document.getElementById("next").style.fontSize = "150%";
+}
+
+function btnActivationPiano() { 
+    if(!document.getElementById("answer-box-piano").value.length){
+        document.getElementById("submit-btn-piano").disabled = true;            
+    }else{
+        document.getElementById("submit-btn-piano").disabled = false;
 
     }           
 } 
