@@ -15,18 +15,18 @@
     <h1 class="heading">What Am I?</h1>
 
     <div class="page-area">
-        <p class="page">riddle 6 / 9</p>
+        <p class="page">riddle 3 / 9</p>
     </div>
     
     <div class="game-area"> 
         
-        <div class="riddle-area"> <!-- towel riddle -->
-            <p id="riddle">I get wet while drying. What am I?</p>
+        <div class="riddle-area"> <!-- teapot riddle -->
+            <p id="riddle">I'm tall when I'm young, and I'm short when I'm old, What am I?</p>
         </div>
-
+    
         <div class="answer-area">
-            <label for="answer-box-egg"> I am a </label>
-            <input class="answer-box" id="answer-box-towel" type="text" onkeyup="btnActivationTowel()">
+            <label for="answer-box-candle"> I am a </label>
+            <input id="answer-box-candle" type="text" onkeyup="btnActivationCandle()">
         </div>
 
         <div>
@@ -34,28 +34,28 @@
         </div>
 
         <div class="button-area">
-            <button id="submit-btn-towel" class="btn submit" data-type="submit-btn" onclick="checkAnswerTowel()" disabled>Submit</button>
-            <button id="show-btn" class="btn give-up" data-type="give-up-btn" onclick="showMeTowel()">Show Me</button>
+            <button id="submit-btn-candle" class="btn submit" data-type="submit-btn" onclick="checkAnswerCandle()" disabled>Submit</button>
+            <button id="show-btn" class="btn give-up" data-type="give-up-btn" onclick="showMeCandle()">Show Me</button>
+        </div>
+    
+        <div class="image-area">
+            <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" /> 
         </div>
 
-        <div class="image-area">
-            <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
-        </div>
-        
         <div>
             <ul>
                 <li id="next">
-                    <a href="piano.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                    <a href="riddle-four.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
                 </li>
             </ul>
             <ul>
-                <li id="next">
+                <li>
                     <a href="index.html">Start over <i class="fa-solid fa-arrow-rotate-left"></i></a>
                 </li>
             </ul>
         </div>
     </div>
-    
+     
  <!-- font awesome & JavaScript links -->
 <script src="https://kit.fontawesome.com/801bd59b5f.js" crossorigin="anonymous"></script> 
 <script src="assets/js/script.js"></script>

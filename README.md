@@ -116,6 +116,10 @@ You can find the Github repository [here](https://github.com/roman-gs/what-am-I)
 
 ### Solved:
 
+- the pages title were giving the answer away. I fixed it by renaming all the pages to riddle-two.html, riddle-three.html etc...
+
+![bug-image](/assets/readme-images/bug.jpg)
+
 ## Validator testings:
 
 ### HTML:
