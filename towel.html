@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS, font awesome and google fonts links -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <title>What Am I?</title>
 </head>
+
 <body>
     <h1 class="heading">What Am I?</h1>
 
@@ -20,44 +19,46 @@
     </div>
     
     <div class="game-area"> 
-        <!-- towel riddle -->
-    <div class="riddle-area">
-        <p id="riddle">I get wet while drying. What am I?</p>
-    </div>
-
-    <div class="answer-area">
-        <label for="answer-box-egg"> I am a </label>
-        <input class="answer-box" id="answer-box-towel" type="text" onkeyup="btnActivationTowel()">
-    </div>
-    <div>
-        <p id="answer"></p>
-    </div>
-    <div class="button-area">
-        <button id="submit-btn-towel" class="btn submit" data-type="submit-btn" onclick="checkAnswerTowel()" disabled>Submit</button>
-        <button id="show-btn" class="btn give-up" data-type="give-up-btn" onclick="showMeTowel()">Show Me</button>
-    </div>
-
-    <div class="image-area">
-    <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
-</div>
         
-    <div>
-        <ul>
-            <li id="next">
-                <a href="piano.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
-            </li>
-        </ul>
-        <ul>
-            <li id="next">
-                <a href="index.html">Start over <i class="fa-solid fa-arrow-rotate-left"></i></a>
-            </li>
-        </ul>
-    </div>
-</div>
-    
- <!-- font awesome script -->
-<script src="https://kit.fontawesome.com/801bd59b5f.js" crossorigin="anonymous"></script> 
+        <div class="riddle-area"> <!-- towel riddle -->
+            <p id="riddle">I get wet while drying. What am I?</p>
+        </div>
 
+        <div class="answer-area">
+            <label for="answer-box-egg"> I am a </label>
+            <input class="answer-box" id="answer-box-towel" type="text" onkeyup="btnActivationTowel()">
+        </div>
+
+        <div>
+            <p id="answer"></p>
+        </div>
+
+        <div class="button-area">
+            <button id="submit-btn-towel" class="btn submit" data-type="submit-btn" onclick="checkAnswerTowel()" disabled>Submit</button>
+            <button id="show-btn" class="btn give-up" data-type="give-up-btn" onclick="showMeTowel()">Show Me</button>
+        </div>
+
+        <div class="image-area">
+            <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
+        </div>
+        
+        <div>
+            <ul>
+                <li id="next">
+                    <a href="piano.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li id="next">
+                    <a href="index.html">Start over <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+ <!-- font awesome & JavaScript links -->
+<script src="https://kit.fontawesome.com/801bd59b5f.js" crossorigin="anonymous"></script> 
 <script src="assets/js/script.js"></script>
+
 </body>
 </html>
