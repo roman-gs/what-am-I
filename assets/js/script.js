@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 
-})
+});
 
 const riddles = [];
 riddles[0]=  {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
@@ -51,7 +51,7 @@ function btnActivationTeapot() {
 } 
 
 function incorrectTeapot() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was teapot!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was teapot!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -76,7 +76,7 @@ function checkAnswerSponge() {
 
 function changeImageSponge() {
     document.getElementById("image").src = riddles[1].img;
-    btnDeactivation()
+    btnDeactivation();
 }
 
 function showMeSponge() {
@@ -93,7 +93,7 @@ function btnActivationSponge() {
 }
 
 function incorrectSponge() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was sponge!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was sponge!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -135,7 +135,7 @@ function btnActivationCandle() {
 } 
 
 function incorrectCandle() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was candle!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was candle!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -176,7 +176,7 @@ function btnActivationBank() {
 } 
 
 function incorrectBank() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was bank!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was bank!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -217,7 +217,7 @@ function btnActivationEgg() {
 } 
 
 function incorrectEgg() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was egg!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was egg!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -259,7 +259,7 @@ function btnActivationTowel() {
 } 
 
 function incorrectTowel() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was towel!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was towel!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -300,7 +300,7 @@ function btnActivationPiano() {
 } 
 
 function incorrectPiano() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was piano!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was piano!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -341,7 +341,7 @@ function btnActivationStaircase() {
 } 
 
 function incorrectStaircase() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was staircase!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was staircase!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
@@ -382,12 +382,12 @@ function btnActivationFence() {
 } 
 
 function incorrectFence() {
-    document.getElementById("answer").innerHTML = "Good idea but the correct answer was fence!"
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was fence!";
     document.getElementById("answer").style.color = "red";
     document.getElementById("answer").style.fontWeight = "bold";
 }
 
-/* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
+/* Shared functions */
 
 function borderGreen() {
     document.getElementById("image").style.border = "6px solid green";
@@ -408,7 +408,7 @@ function btnDeactivation() {
 }
 
 function correct() {
-    document.getElementById("answer").innerHTML = "Correct!"
+    document.getElementById("answer").innerHTML = "Correct!";
     document.getElementById("answer").style.color = "green";
     document.getElementById("answer").style.fontWeight = "bold";
 }
