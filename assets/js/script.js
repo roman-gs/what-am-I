@@ -3,6 +3,7 @@
 document.addEventListener("DOMContentLoaded", function() {
 });
 
+// riddles:
 const riddles = [];
 riddles[0]=  {answer:"teapot", img:"./assets/images/pexels-ekaterina-bolovtsova-5849991.jpg"};
 riddles[1]= {answer:"sponge", img:"./assets/images/pexels-cottonbro-4108680.jpg"};
@@ -14,7 +15,8 @@ riddles[6]= {answer:"piano", img:"./assets/images/pexels-juan-pablo-serrano-aren
 riddles[7]= {answer:"staircase", img:"./assets/images/pexels-cosmin-paduraru-340981.jpg"};
 riddles[8]= {answer:"fence", img:"./assets/images/pexels-merilin-kirsika-tedder-635405.jpg"};
 
-//Teapot riddle
+//Teapot riddle functions
+
 function checkAnswerTeapot() {
     let userAnswer = document.getElementById("answer-box-teapot").value;
     let userAnswerTrim = userAnswer.trim();
@@ -56,7 +58,8 @@ function incorrectTeapot() {
 }
 
 
-//Sponge riddle
+//Sponge riddle functions
+
 function checkAnswerSponge() {
     let userAnswer = document.getElementById("answer-box-sponge").value;
     let userAnswerTrim = userAnswer.trim();
@@ -98,7 +101,8 @@ function incorrectSponge() {
 }
 
  
-//Candle riddle
+//Candle riddle functions
+
 function checkAnswerCandle() {
     let userAnswer = document.getElementById("answer-box-candle").value;
     let userAnswerTrim = userAnswer.trim();
@@ -139,7 +143,8 @@ function incorrectCandle() {
     document.getElementById("answer").style.fontWeight = "bold";
 }
 
-//Bank riddle
+//Bank riddle functions
+
 function checkAnswerBank() {
     let userAnswer = document.getElementById("answer-box-bank").value;
     let userAnswerTrim = userAnswer.trim();
@@ -180,7 +185,8 @@ function incorrectBank() {
     document.getElementById("answer").style.fontWeight = "bold";
 }
 
-//Egg riddle
+//Egg riddle functions
+
 function checkAnswerEgg() {
     let userAnswer = document.getElementById("answer-box-egg").value;
     let userAnswerTrim = userAnswer.trim();
@@ -222,7 +228,8 @@ function incorrectEgg() {
 }
 
 
-//Towel riddle
+//Towel riddle functions
+
 function checkAnswerTowel() {
     let userAnswer = document.getElementById("answer-box-towel").value;
     let userAnswerTrim = userAnswer.trim();
@@ -263,7 +270,8 @@ function incorrectTowel() {
     document.getElementById("answer").style.fontWeight = "bold";
 }
 
-//Piano riddle
+//Piano riddle functions
+
 function checkAnswerPiano() {
     let userAnswer = document.getElementById("answer-box-piano").value;
     let userAnswerTrim = userAnswer.trim();
@@ -304,7 +312,8 @@ function incorrectPiano() {
     document.getElementById("answer").style.fontWeight = "bold";
 }
 
-//Staircase riddle
+//Staircase riddle functions
+
 function checkAnswerStaircase() {
     let userAnswer = document.getElementById("answer-box-staircase").value;
     let userAnswerTrim = userAnswer.trim();
@@ -345,7 +354,8 @@ function incorrectStaircase() {
     document.getElementById("answer").style.fontWeight = "bold";
 }
 
-//Fence riddle
+//Fence riddle functions
+
 function checkAnswerFence() {
     let userAnswer = document.getElementById("answer-box-fence").value;
     let userAnswerTrim = userAnswer.trim();
