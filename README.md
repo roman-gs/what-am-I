@@ -1,6 +1,6 @@
 # Portfolio Project 2 - Javascript Essentials: What am I?
 
-[What am I?](https://roman-gs.github.io/what-am-I/) is a 10 page website each containing a riddle. It allows the player to guess the answer, and gives the user the answer by displaying an alert and an image of the object.
+[What am I?](https://roman-gs.github.io/what-am-I/) is a 10 page website each containing a riddle. It allows the player to guess the answer, and get the answer by displaying a message and an image of the object.
 
 It was developed as part of the second module in the Full Stack Software Development course dispensed by the [Code Institute](https://codeinstitute.net), using HTML, CSS & JavaScript.
 
@@ -80,7 +80,7 @@ You can find the Github repository [here](https://github.com/roman-gs/what-am-I)
 
 - ### The "Thank you" page
 
-    - The last page displays a thank you message along with an image. 
+    - The last page displays a thank you message along with an image and a link to my Github page that opens in a new tab.
 
     ![Thank-you](/assets/readme-images/thankyou.jpg)
 
