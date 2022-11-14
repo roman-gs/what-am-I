@@ -60,11 +60,11 @@ function checkAnswerSponge() {
     let userAnswer = document.getElementById("answer-box-sponge").value;
     
     if (userAnswer === riddles[1].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageSponge();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[1].answer}`);
+        incorrectSponge();
         changeImageSponge();
         borderRed();
     }
@@ -85,8 +85,13 @@ function btnActivationSponge() {
         document.getElementById("submit-btn-sponge").disabled = true;            
     }else{
         document.getElementById("submit-btn-sponge").disabled = false;
-
     }  
+}
+
+function incorrectSponge() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was sponge!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
 }
 
  
@@ -95,11 +100,11 @@ function checkAnswerCandle() {
     let userAnswer = document.getElementById("answer-box-candle").value;
     
     if (userAnswer === riddles[2].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageCandle();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[2].answer}`);
+        incorrectCandle();
         changeImageCandle();
         borderRed();
     }
@@ -120,21 +125,25 @@ function btnActivationCandle() {
         document.getElementById("submit-btn-candle").disabled = true;            
     }else{
         document.getElementById("submit-btn-candle").disabled = false;
-
     }           
 } 
 
+function incorrectCandle() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was candle!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 //Bank riddle
 function checkAnswerBank() {
     let userAnswer = document.getElementById("answer-box-bank").value;
     
     if (userAnswer === riddles[3].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageBank();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[3].answer}`);
+        incorrectBank();
         changeImageBank();
         borderRed();
     }
@@ -155,20 +164,25 @@ function btnActivationBank() {
         document.getElementById("submit-btn-bank").disabled = true;            
     }else{
         document.getElementById("submit-btn-bank").disabled = false;
-
     }           
 } 
+
+function incorrectBank() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was bank!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 //Egg riddle
 function checkAnswerEgg() {
     let userAnswer = document.getElementById("answer-box-egg").value;
     
     if (userAnswer === riddles[4].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageEgg();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[4].answer}`);
+        incorrectEgg();
         changeImageEgg();
         borderRed();
     }
@@ -189,9 +203,14 @@ function btnActivationEgg() {
         document.getElementById("submit-btn-egg").disabled = true;            
     }else{
         document.getElementById("submit-btn-egg").disabled = false;
-
     }           
 } 
+
+function incorrectEgg() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was egg!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 
 //Towel riddle
@@ -199,11 +218,11 @@ function checkAnswerTowel() {
     let userAnswer = document.getElementById("answer-box-towel").value;
     
     if (userAnswer === riddles[5].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageTowel();
         borderGreen ();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[5].answer}`);
+        incorrectTowel();
         changeImageTowel();
         borderRed ();
     }
@@ -224,21 +243,25 @@ function btnActivationTowel() {
         document.getElementById("submit-btn-towel").disabled = true;            
     }else{
         document.getElementById("submit-btn-towel").disabled = false;
-
     }           
 } 
 
+function incorrectTowel() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was towel!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 //Piano riddle
 function checkAnswerPiano() {
     let userAnswer = document.getElementById("answer-box-piano").value;
     
     if (userAnswer === riddles[6].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImagePiano();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[6].answer}`);
+        incorrectPiano();
         changeImagePiano();
         borderRed();
     }
@@ -259,20 +282,25 @@ function btnActivationPiano() {
         document.getElementById("submit-btn-piano").disabled = true;            
     }else{
         document.getElementById("submit-btn-piano").disabled = false;
-
     }           
 } 
+
+function incorrectPiano() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was piano!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 //Staircase riddle
 function checkAnswerStaircase() {
     let userAnswer = document.getElementById("answer-box-staircase").value;
     
     if (userAnswer === riddles[7].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageStaircase();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[7].answer}`);
+        incorrectStaircase();
         changeImageStaircase();
         borderRed();
     }
@@ -293,20 +321,25 @@ function btnActivationStaircase() {
         document.getElementById("submit-btn-staircase").disabled = true;            
     }else{
         document.getElementById("submit-btn-staircase").disabled = false;
-
     }           
 } 
+
+function incorrectStaircase() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was staircase!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 //Fence riddle
 function checkAnswerFence() {
     let userAnswer = document.getElementById("answer-box-fence").value;
     
     if (userAnswer === riddles[8].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageFence();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[8].answer}`);
+        incorrectFence();
         changeImageFence();
         borderRed();
     }
@@ -327,9 +360,14 @@ function btnActivationFence() {
         document.getElementById("submit-btn-fence").disabled = true;            
     }else{
         document.getElementById("submit-btn-fence").disabled = false;
-
     }           
 } 
+
+function incorrectFence() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was fence!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 /* Deactivate button  credit: https://stackoverflow.com/questions/7067005/disable-button-whenever-a-text-field-is-empty-dynamically */
 
