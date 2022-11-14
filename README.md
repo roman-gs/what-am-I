@@ -2,7 +2,7 @@
 
 [What am I?](https://roman-gs.github.io/what-am-I/) is a 10 page website each containing a riddle. It allows the player to guess the answer, and gives the user the answer by displaying an alert and an image of the object.
 
-It was developed as part of the second module in the Full Stack Software Development course dispensed by the [Code Institute](https://codeinstitute.net), using HTML, CSS & Javascript.
+It was developed as part of the second module in the Full Stack Software Development course dispensed by the [Code Institute](https://codeinstitute.net), using HTML, CSS & JavaScript.
 
 ![Multi-device-test](/assets/readme-images/amiresponsive.jpg)
 
@@ -16,7 +16,7 @@ You can find the Github repository [here](https://github.com/roman-gs/what-am-I)
 
 - ### The title and page number:
 
-    - Featured at the top of all 10 pages it contains the title of the website and the number of the page for all the pages containing a riddle.
+    - Featured at the top of all 10 pages, it contains the title of the website and the number of the page the user is currently on.
 
     ![Title-image](/assets/readme-images/title.jpg)
 
@@ -46,7 +46,16 @@ You can find the Github repository [here](https://github.com/roman-gs/what-am-I)
     - It's greyed out after the image has been displayed.
     - Its background color changes from grey to red when hovered over.
 
-    ![Showne-image](/assets/readme-images/showme.jpg)
+    ![Show-me-image](/assets/readme-images/showme.jpg)
+
+- ### The "Next page" and "Start Over" links:
+
+    - This image is, by default, a question mark.
+    - It changes to an image of the object once the user click on the "Submit" or the "Show Me" button.
+    - Its border changes to green if the user guessed correctly.
+    - Its border changes to red if the user guessed incorrectly or clicked on the "Show Me" button.
+
+    ![Image-area-image](/assets/readme-images/image.jpg)
 
 - ### The "Next page" and "Start Over" links:
 
