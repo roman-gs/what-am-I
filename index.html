@@ -10,9 +10,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css"> 
     <title>What Am I?</title>
 </head>
+
 <body>
     <h1 class="heading">What Am I?</h1>
 
@@ -21,8 +22,7 @@
     </div>
     
     <div class="game-area"> 
-        <!-- teapot riddle -->
-        <div class="riddle-area">
+        <div class="riddle-area"> <!-- teapot riddle -->
             <p id="riddle">My name begins with T, ends with T and I contain T. What am I?</p>
         </div>
 
@@ -30,30 +30,32 @@
             <label for="answer-box-teapot"> I am a</label>
             <input class="answer-box" id="answer-box-teapot" type="text" onkeyup="btnActivationTeapot()">
         </div>
+        <div>
+            <p id="answer"></p>
+        </div>
     
         <div class="button-area">
             <button id="submit-btn-teapot" class="btn submit" data-type="submit-btn" onclick="checkAnswerTeapot()" disabled>Submit</button>
             <button id="show-btn" class="btn give-up" data-type="give-up-btn" onclick="showMeTeapot()">Show Me</button>
         </div>
-    
 
-    <div class="image-area">
-        <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
-    </div>
+        <div class="image-area">
+            <img id="image" src="./assets/images/pexels-pixabay-356079.jpg" alt="Picture of a question mark" />
+        </div>
         
-    <div>
-        <ul>
-            <li id="next">
-                <a href="sponge.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="index.html">Start over <i class="fa-solid fa-arrow-rotate-left"></i></a>
-            </li>
-        </ul>
-    </div>  
-</div>
+        <div>
+            <ul>
+                <li>
+                    <a href="sponge.html">Next page <i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="index.html">Start over <i class="fa-solid fa-arrow-rotate-left"></i></a>
+                </li>
+            </ul>
+        </div>  
+    </div>
     
  <!-- font awesome script -->
 <script src="https://kit.fontawesome.com/801bd59b5f.js" crossorigin="anonymous"></script> 

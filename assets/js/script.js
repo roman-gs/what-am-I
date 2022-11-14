@@ -19,11 +19,11 @@ function checkAnswerTeapot() {
     let userAnswer = document.getElementById("answer-box-teapot").value;
     
     if (userAnswer === riddles[0].answer) {
-        alert("Congratulation, that's correct!");
+        correct();
         changeImageTeapot();
         borderGreen();
     } else {
-        alert(`You've answered ${userAnswer}, the correct answer was ${riddles[0].answer}`);
+        incorrectTeapot();
         changeImageTeapot();
         borderRed();
     }
@@ -47,6 +47,12 @@ function btnActivationTeapot() {
 
     }           
 } 
+
+function incorrectTeapot() {
+    document.getElementById("answer").innerHTML = "Good idea but the correct answer was teapot!"
+    document.getElementById("answer").style.color = "red";
+    document.getElementById("answer").style.fontWeight = "bold";
+}
 
 
 //Sponge riddle
@@ -343,6 +349,12 @@ function borderRed() {
 
 function btnDeactivation() { 
     document.getElementById("show-btn").disabled = true;            
+}
+
+function correct() {
+    document.getElementById("answer").innerHTML = "Correct!"
+    document.getElementById("answer").style.color = "green";
+    document.getElementById("answer").style.fontWeight = "bold";
 }
 
 
