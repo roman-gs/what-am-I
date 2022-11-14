@@ -145,7 +145,7 @@ The site was deployed to [GitHub pages](https://github.com/roman-gs).
 ### Content & Media:
 
 - The images were all taken from [Pexel](https://www.pexels.com/)
-- The riddles were taken from [this website](https://parade.com/947956/parade/riddles/)
+- The riddles were taken from [the Parade.com website](https://parade.com/947956/parade/riddles/)
 - All icons coming from [Fontawesome](https://fontawesome.com/)
 - Fonts coming from [Google-fonts](https://fonts.google.com/)
 
