@@ -1,6 +1,7 @@
 //Wait for the DOM to finish loading before running the game
 
 document.addEventListener("DOMContentLoaded", function() {
+
 })
 
 const riddles = [];
@@ -17,8 +18,10 @@ riddles[8]= {answer:"fence", img:"./assets/images/pexels-merilin-kirsika-tedder-
 //Teapot riddle
 function checkAnswerTeapot() {
     let userAnswer = document.getElementById("answer-box-teapot").value;
-    
-    if (userAnswer === riddles[0].answer) {
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
+
+    if (userAnswerLow === riddles[0].answer) {
         correct();
         changeImageTeapot();
         borderGreen();
@@ -44,7 +47,6 @@ function btnActivationTeapot() {
         document.getElementById("submit-btn-teapot").disabled = true;            
     }else{
         document.getElementById("submit-btn-teapot").disabled = false;
-
     }           
 } 
 
@@ -58,8 +60,10 @@ function incorrectTeapot() {
 //Sponge riddle
 function checkAnswerSponge() {
     let userAnswer = document.getElementById("answer-box-sponge").value;
-    
-    if (userAnswer === riddles[1].answer) {
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
+
+    if (userAnswerLow === riddles[1].answer) {
         correct();
         changeImageSponge();
         borderGreen();
@@ -98,8 +102,10 @@ function incorrectSponge() {
 //Candle riddle
 function checkAnswerCandle() {
     let userAnswer = document.getElementById("answer-box-candle").value;
-    
-    if (userAnswer === riddles[2].answer) {
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
+
+    if (userAnswerLow === riddles[2].answer) {
         correct();
         changeImageCandle();
         borderGreen();
@@ -137,8 +143,10 @@ function incorrectCandle() {
 //Bank riddle
 function checkAnswerBank() {
     let userAnswer = document.getElementById("answer-box-bank").value;
-    
-    if (userAnswer === riddles[3].answer) {
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
+
+    if (userAnswerLow === riddles[3].answer) {
         correct();
         changeImageBank();
         borderGreen();
@@ -176,8 +184,10 @@ function incorrectBank() {
 //Egg riddle
 function checkAnswerEgg() {
     let userAnswer = document.getElementById("answer-box-egg").value;
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
     
-    if (userAnswer === riddles[4].answer) {
+    if (userAnswerLow === riddles[4].answer) {
         correct();
         changeImageEgg();
         borderGreen();
@@ -216,8 +226,10 @@ function incorrectEgg() {
 //Towel riddle
 function checkAnswerTowel() {
     let userAnswer = document.getElementById("answer-box-towel").value;
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
     
-    if (userAnswer === riddles[5].answer) {
+    if (userAnswerLow === riddles[5].answer) {
         correct();
         changeImageTowel();
         borderGreen ();
@@ -255,8 +267,10 @@ function incorrectTowel() {
 //Piano riddle
 function checkAnswerPiano() {
     let userAnswer = document.getElementById("answer-box-piano").value;
-    
-    if (userAnswer === riddles[6].answer) {
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
+
+    if (userAnswerLow === riddles[6].answer) {
         correct();
         changeImagePiano();
         borderGreen();
@@ -294,8 +308,10 @@ function incorrectPiano() {
 //Staircase riddle
 function checkAnswerStaircase() {
     let userAnswer = document.getElementById("answer-box-staircase").value;
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
     
-    if (userAnswer === riddles[7].answer) {
+    if (userAnswerLow === riddles[7].answer) {
         correct();
         changeImageStaircase();
         borderGreen();
@@ -333,8 +349,10 @@ function incorrectStaircase() {
 //Fence riddle
 function checkAnswerFence() {
     let userAnswer = document.getElementById("answer-box-fence").value;
+    let userAnswerTrim = userAnswer.trim();
+    let userAnswerLow = userAnswerTrim.toLowerCase();
     
-    if (userAnswer === riddles[8].answer) {
+    if (userAnswerLow === riddles[8].answer) {
         correct();
         changeImageFence();
         borderGreen();
@@ -394,14 +412,3 @@ function correct() {
     document.getElementById("answer").style.color = "green";
     document.getElementById("answer").style.fontWeight = "bold";
 }
-
-
-
-
-
-  
-
-    
-        
-
-

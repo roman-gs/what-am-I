@@ -26,11 +26,20 @@ You can find the Github repository [here](https://github.com/roman-gs/what-am-I)
 
     ![Riddle-area-image](/assets/readme-images/riddle.jpg)
 
-- ### The answer area:
+- ### The user answer area:
 
     - This input field lets the user type in their answer.
 
     ![Answer-box-image](/assets/readme-images/answerbox.jpg)
+
+- ### The game answer area:
+    
+    - This paragraph is invisible until the user clicks on the "Submit" button.
+    - If the user's answer is correct, the "Correct!" message is shown.
+    - If the user's answer is incorrect, the "Good idea but the correct answer was sponge!" message is shown
+
+    ![correct-image](/assets/readme-images/correct.jpg)
+    ![incorrect-image](/assets/readme-images/incorrect.jpg)
 
 - ### The "Submit" button:
 
@@ -153,4 +162,3 @@ The site was deployed to [GitHub pages](https://github.com/roman-gs).
 
 - Code from the HTML & CSS Essentials & JavaScript Essentials courses including the Love Running project and the Love Maths project walkthroughs. 
 - Thanks to the [W3Schools](https://www.w3schools.com/) and the [Stackoverflow](https://stackoverflow.com/) websites.
-
